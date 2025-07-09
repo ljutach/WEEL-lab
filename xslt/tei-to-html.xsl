@@ -16,18 +16,67 @@
                 <title>
                     <xsl:value-of select="//tei:title"/>
                 </title>
-                <style>
-                    body { font-family: sans-serif; max-width: 700px; margin: 2em auto; }
-                    .name { font-weight: bold; color: darkblue; }
-                    .place { color: darkgreen; }
-                </style>
+                <link rel="stylesheet">
+                    <xsl:attribute name="href">../css/style.css</xsl:attribute>
+                </link>
             </head>
+
             <body>
                 <h1><xsl:value-of select="//tei:title"/></h1>
+                <!-- <h1><xsl:value-of select="//tei:title[@type='main']"/></h1> -->
+                <xsl:apply-templates select="//tei:teiHeader"/>
                 <xsl:apply-templates select="//tei:body"/>
             </body>
         </html>
     </xsl:template>
+    
+    <!-- ========== TEI Header ========== -->
+    <xsl:template match="tei:teiHeader">
+        <section class="tei-header">
+            <h2>Document Metadata</h2>
+            <table class="metadata-table">
+
+                <tr>
+                    <th>Title</th>
+                    <td><xsl:value-of select=".//tei:title[@type='WS']"/></td>
+                </tr>
+                <tr>
+                    <th>Author</th>
+                    <td><xsl:value-of select=".//tei:author/tei:persName"/></td>
+                </tr>
+                <tr>
+                    <th>Editor(s)</th>
+                    <td><xsl:apply-templates select=".//tei:editor"/></td>
+                </tr>
+                <tr>
+                    <th>Funder(s)</th>
+                    <td><xsl:value-of select=".//tei:funder"/></td>
+                </tr>
+                <tr>
+                    <th>Publisher</th>
+                    <td><xsl:value-of select=".//tei:publicationStmt/tei:publisher"/></td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td><xsl:value-of select=".//tei:pubPlace"/></td>
+                </tr>
+                <tr>
+                    <th>Source</th>
+                    <td><xsl:value-of select=".//tei:sourceDesc/tei:p"/></td>
+                </tr>
+                <tr>
+                    <th>License</th>
+                    <td><xsl:value-of select=".//tei:availability/tei:p"/></td>
+                </tr>
+                <tr>
+                    <th>Subject</th>
+                    <td><xsl:value-of select=".//tei:keywords/tei:term"/></td>
+                </tr>
+            </table>
+        </section>
+    </xsl:template>
+
+
     
     <!-- ========== Paragraphs ========== -->
     <xsl:template match="tei:p">

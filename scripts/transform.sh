@@ -3,7 +3,7 @@
 SAXON_JAR="tools/saxon-he-12.7.jar"
 RESOLVER_JAR="tools/xmlresolver-5.2.0.jar"
 
-INPUT="data/Ts-207_Clarino-CC.xml"
+INPUT="data/Ts-207_Clarino-pruned.xml"
 XSLT="xslt/tei-to-html.xsl"
 OUTPUT="output/output.html"
 
