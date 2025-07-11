@@ -1,28 +1,32 @@
 /* === Global styles === */
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Calibri', serif;
     max-width: 720px;
     margin: 3em auto;
     line-height: 1.7;
     color: #222;
-    background: #fafafa;
+    background: #fff598;
     padding: 0 1em;
 }
 
 h1 {
     text-align: center;
-    font-size: 5.2em;
+    font-size: 2.2em;
     margin-bottom: 1em;
     color: #2a2a2a;
 }
 
+h2 {
+    text-align: center;
+}
+
 /* === Metadata Header === */
 .tei-header {
-    background: #f2f2f2;
+    background: #f8be98;
     padding: 1.5em;
     margin-bottom: 3em;
-    border-left: 6px solid #888;
-    border-radius: 5px;
+    border-left: 6px solid #c5d9f7;
+    border-radius: 5px; 
 }
 
 .tei-header h2 {
@@ -36,17 +40,17 @@ h1 {
     border-collapse: collapse;
     margin-top: 1em;
     font-size: 0.95em;
-    border: 1px solid #999; /* add border to the whole table */
+    border: 1px solid #41a36d; /* add border to the whole table */
 }
 
 .metadata-table th, .metadata-table td {
-    border: 1px solid #999;  /* add border to cells */
+    border: 1px solid #3e11c5;  /* add border to cells */
     padding: 0.5em;
 }
 
 .metadata-table th {
     text-align: center; /* your desired alignment */
-    background: #cde9aa;
+    background: #a7eeb1;
     color: #333;
     vertical-align: top;
     width: 30%;
@@ -57,6 +61,36 @@ h1 {
     color: #222;
 }
 
+/* === Navbar === */
+.navbar {
+    background-color: #333;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5em;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* === Body Content === */
 .body {
@@ -66,23 +100,21 @@ h1 {
 .speech {
     margin-bottom: 2em;
     padding-left: 0.5em;
-    border-left: 3px solid #ddd;
+    border-left: 3px solid #c5d9f7;
 }
 
 .segment {
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 .sentence {
-    margin-bottom: 0.8em;
+    margin: 0;
     text-indent: 1.5em;
+    display: block;
 }
 
 /* === Inline Elements === */
-.capital {
-    font-weight: bold;
-    font-size: 1.1em;
-}
+
 
 .name {
     font-weight: bold;

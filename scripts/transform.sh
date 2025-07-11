@@ -5,7 +5,7 @@ RESOLVER_JAR="tools/xmlresolver-5.2.0.jar"
 
 INPUT="data/Ts-207_Clarino-pruned.xml"
 XSLT="xslt/tei-to-html.xsl"
-OUTPUT="output/output.html"
+OUTPUT="index.html"
 
 # Run the transformation with both JARs
 echo "🔄 Transforming $INPUT into $OUTPUT using $XSLT..."

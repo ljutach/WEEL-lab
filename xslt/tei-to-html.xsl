@@ -13,9 +13,15 @@
             <head>
                 <meta charset="UTF-8"/>
                 <title><xsl:value-of select="//tei:title[@type='WS']"/></title>
-                <link rel="stylesheet" href="../css/style.css"/>
+                <link rel="stylesheet" href="css/style.css"/>
             </head>
             <body>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="http://example.org:8890/sparql" target="_blank">SPARQL Endpoint</a></li>
+                    </ul>
+                </nav>
                 <h1><xsl:value-of select="//tei:title[@type='WS']"/></h1>
                 <xsl:apply-templates select="//tei:teiHeader"/>
                 <xsl:apply-templates select="//tei:body"/>
@@ -55,19 +61,16 @@
     </xsl:template>
     
     <xsl:template match="tei:seg[@type='publ']">
-        <div class="segment">
+        <p class="paragraph">
             <xsl:apply-templates/>
-        </div>
+        </p>
     </xsl:template>
     
-    <xsl:template match="tei:s">
-        <p class="sentence"><xsl:apply-templates/></p>
-    </xsl:template>
+    <!-- <xsl:template match="tei:s">
+        <div class="sentence"><xsl:apply-templates/></div>
+    </xsl:template> -->
     
-    <!-- Characters and Line Breaks -->
-    <xsl:template match="tei:c">
-        <span class="capital"><xsl:apply-templates/></span>
-    </xsl:template>
+    <!-- Line Breaks -->
     
     <xsl:template match="tei:lb">
         <br/>
