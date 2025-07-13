@@ -10,7 +10,7 @@
 				<title type="WS" key="Facsimile: CC BY-NC 4.0. Original at the Wren Library, Trinity College, Cambridge, where in 2014-15, on the request of the Wittgenstein Archives at the University of Bergen (WAB) and with the generous financial support of the Stanhill Foundation, London, this scan was produced. The image was post-processed at WAB and is reproduced here by permission of The Master and Fellows of Trinity College, Cambridge, and the University of Bergen, Bergen. The sale, further reproduction or use of this image for commercial purposes without prior permission from the copyright holder is prohibited. © 2015 The Master and Fellows of Trinity College, Cambridge; The University of Bergen, Bergen."> Ts-207 [so-called Lecture on Ethics] (WL)</title>
 				<title xml:id="Ts-207" n="Ts-207" type="main" xml:lang="en"/>
 				<author>
-					<persName key="Wittgenstein, Ludwig">Ludwig Wittgenstein</persName>
+					<persName xml:id="wittgenstein" key="Wittgenstein, Ludwig">Ludwig Wittgenstein</persName>
 				</author>
 				<editor>
 					<orgName ref="http://wab.uib.no/">WAB</orgName> (directors: Claus Huitfeldt 1990-2000,  Alois Pichler 2001-). Responsible editor for this transcription: <persName>Alois Pichler</persName>
@@ -200,23 +200,32 @@
 						<c type="k">I</c> will now begin.</s>
 					
 							<rs type="extref" key="Moore, George Edward: Principia Ethica">
-					<s type="es">My subject, as you know, is <c type="c">E</c>thics and I will<lb/>
+					<s type="es">My subject, as you know, is <term xml:id="fld1" ana="onto:Field">
+						<c type="c">E</c>thics
+					</term>thics and I will<lb/>
 					adopt the
-					explanation of that term which <persName key="Moore, George Edward">Prof. Moore</persName> has given in his<lb/>
+					explanation of that term which <persName xml:id="moore" ana="onto:Person" key="Moore, George Edward">Prof. Moore</persName> has given in his<lb/>
 					book
-				<seg type="q">“Principia Ethica”</seg>.
+					<seg type="q">
+						<bibl xml:id="src1" ana="onto:WittgensteinExternalSource" ref="#moore">“Principia Ethica”</bibl>
+					</seg>.
 					</s>
 						
-					<s type="es">He says: <seg type="q">“<c type="c">E</c>thics is the general enquiry into<lb/>
-					what is good”</seg>.
+					<s type="es">He says: <seg xml:id="persp1" ana="onto:Perspective" corresp="#fld1" ref="#moore">
+					“<c type="c">E</c>thics is the general enquiry into<lb/>what is good.”
+					</seg>
 					</s>
 							</rs>
 					
-					<s type="es">Now I am going to use the term <c type="c">E</c>thics in a slightly<lb/>
-					wider sense,
-					in a sense in fact which includes what I believe to be the<lb/>
-					most essential
-					part of what is generally called <c type="c">A</c>esthetics.
+					<s xml:id="persp2" type="es" ana="onto:Perspective" ref="#wittgenstein" corresp="#fld1">
+						Now I am going to use the term <c type="c">E</c>thics in a slightly<lb/>
+						wider sense,
+						in a sense in fact which includes what I believe to be the<lb/>
+						most essential
+						part of what is generally called 
+						<term xml:id="fld2" ana="onto:Field">
+							<c type="c">A</c>esthetics
+						</term>.
 					</s>
 							<rs type="extref" key="Galton, Francis: Memories of my Life">
 						
@@ -229,7 +238,7 @@
 					the above definition, and<lb/>
 					by enumerating them I want to produce the same
 					sort of effect which<lb/>
-					<persName key="Galton, Francis">Galton
+					<persName xml:id="galton" ana="onto:Person" key="Galton, Francis">Galton
 					</persName> produced when he took a number of photos of
 					different faces<lb/>
 					on the same photographic plate in order to get the
@@ -241,10 +250,7 @@
 					<s type="es">And as by showing to you such a<lb/>
 					collective photo I could make you see
 					what is the typical – say – <lb/>
-					<corr type="trsn">
-					<orig type="trsn1">c</orig>
-					<reg type="trsn2">C</reg>
-					</corr>hinese face;
+					Chinese face;
 					so if you look through the row of synonyms which I will put<lb/>
 					before you,
 					you will, I hope, be able to see the characteristic<lb/>
@@ -253,23 +259,28 @@
 					features of
 					<c type="c">E</c>thics.
 					</s>
-
-					<s type="es">Now instead of saying <seg type="q">“<c type="c">E</c>
-					<del type="dnpc_h">
-					<corr type="npcn">t</corr>
-					</del>thics
-					is the enquiry into<lb/>
-					what is good”</seg> I could have said
-					<c type="c">E</c>thics is the enquiry into what is valu<lb rend="shyphen"/>
-					able, or, into what is
-					really important, or I could have said <c type="c">E</c>thics is<lb/>
-					<pb facs="Ts-207_3" rend="recto" n="pagename_Ts-207,3 pageref_00"/>
-					<fw type="pagen" place="top left">3)</fw> the enquiry into the meaning of life, or
-					into what makes life worth living<add rend="el_h">,</add>
-					<lb/>
-					or into the right way of
-					living.
+					
+					<s type="es">
+						Now instead of saying 
+						<seg type="q">“<c type="c">E</c>thics is the enquiry into<lb/>what is good”</seg> 
+						I could have said
+						<seg xml:id="ex1" type="example" ana="onto:Exemplification" corresp="#persp1">
+							<c type="c">E</c>thics is the enquiry into what is valuable
+						</seg>, or,
+						<seg xml:id="ex2" type="example" ana="onto:Exemplification" corresp="#persp1">
+							into what is really important
+						</seg>, or
+						<seg xml:id="ex3" type="example" ana="onto:Exemplification" corresp="#persp1">
+							the enquiry into the meaning of life
+						</seg>, or
+						<seg xml:id="ex4" type="example" ana="onto:Exemplification" corresp="#persp1">
+							what makes life worth living
+						</seg>, or
+						<seg xml:id="ex5" type="example" ana="onto:Exemplification" corresp="#persp1">
+							the right way of living
+						</seg>.
 					</s>
+
 
 					<s type="es">
 						<c type="k">I</c> believe if you look at all these phrases<lb/>
@@ -360,8 +371,7 @@
 					<s type="es">The essence of this difference seems to<lb/>
 					be obviously this:
 					<c type="c">E</c>very judgment of relative value is a mere statement of<lb/>
-					<pb facs="Ts-207_4" rend="recto" n="pagename_Ts-207,4 pageref_00"/>
-					<fw type="pagen" place="top left">4)</fw> facts and can therefore be put in such a
+					facts and can therefore be put in such a
 					form that it loses all the<lb/>
 					appearance of a judgment of value:
 					<c type="c">I</c>nstead of saying <seg type="q">“this is the right way<lb/>
@@ -381,27 +391,31 @@
 					of minutes, <abbr corresp="and so forth.">a.s.f.</abbr>
 					</s>
 					
-					<s type="es">Now what I wish to contend is, that<lb/>
-					although all judgments of relative
-					value can be shown to be mere statements<lb/>
-					of facts, no statement of fact
-					can ever be, or imply, a judgment of<lb/>
-					<emph rend="us1">absolute</emph> value.</s>
-
-					<s type="es">Let me explain this: <c type="c">S</c>uppose one of you were an omniscient<lb/>
-					person and therefore knew all the movements of all the bodies in the
-					world<lb/>
-					dead or alive and that he also knew all the states of mind of all
-					human<lb/>
-					beings that ever lived, and suppose this man wrote all he knew in a
-					big<lb/>
-					book, then this book would contain the whole description of the
-					world; and<lb/>
-					what I want to say is, that this book would contain nothing
-					that we would<lb/>
-					call an <emph rend="us1">ethical</emph> judgment or anything that would
-					logically imply such a<lb/>
-					judgment.
+					<s type="es">
+						<seg xml:id="clm1"
+							ana="onto:Point"
+							ref="#wittgenstein"
+							corresp="#fld1">
+							although all judgments of relative value can be shown to be mere statements
+							of facts, no statement of fact can ever be, or imply, a judgment of
+							<emph rend="us1">absolute</emph> value
+						</seg>
+					</s>
+					
+					
+					<s type="es">
+						<seg xml:id="ex6"
+							ana="onto:Exemplification"
+							corresp="#clm1">
+							Let me explain this: <c type="c">S</c>uppose one of you were an omniscient
+							person and therefore knew all the movements of all the bodies in the world
+							dead or alive and that he also knew all the states of mind of all human
+							beings that ever lived, and suppose this man wrote all he knew in a big
+							book, then this book would contain the whole description of the world; and
+							what I want to say is, that this book would contain nothing that we would
+							call an <emph rend="us1">ethical</emph> judgment or anything that would logically imply such a
+							judgment.
+						</seg>
 					</s>
 
 					<s type="es">It would of course contain all relative judgments of value and<lb/>
@@ -420,12 +434,17 @@
 					are no propositions which, in any absolute sense, are sublime,
 					important,<lb/>
 					or trivial.</s>
-					<rs type="extref" key="Shakespeare, William: Hamlet">
-					<s type="es">Now perhaps some of you will agree to that and be reminded of<lb/>
-					Hamlet's words: <seg type="q">
-					<corr type="tra">“</corr>Nothing is either
-					good or bad, but thinking makes it so”</seg>.
+					<persName xml:id="shakespeare" ana="onto:Person" key="Shakespeare, William"/>
+					
+					<s type="es">
+						Now perhaps some of you will agree to that and be reminded of<lb/>
+						<bibl xml:id="src2" ana="onto:WittgensteinExternalSource" ref="#shakespeare">Hamlet</bibl>'s words:
+						<seg xml:id="persp3" ana="onto:Perspective" ref="#shakespeare" corresp="#fld1" source="#src2" type="q">
+							“Nothing is either good or bad, but thinking makes it so.”
+						</seg>
 					</s>
+
+
 						
 					<lb/>
 					<s type="es">But this again could lead to a misunderstanding.</s>
@@ -439,14 +458,12 @@
 					fact which we can describe, is in no ethical<lb/>
 					sense good or bad.
 					</s>
-					</rs>
+					
 
 					<s type="es">If for instance in our world-book we read the descrip<lb rend="shyphen"/>
 					tion of a
 					murder with all its details physical and psychological the mere<lb/>
 					description of these facts will contain nothing which we could call an<lb/>
-					<pb facs="Ts-207_5" rend="recto" n="pagename_Ts-207,5 pageref_00"/>
-					<fw type="pagen" place="top left">5)</fw>
 					<emph rend="us1">ethical</emph> proposition.
 					</s>
 
@@ -464,40 +481,36 @@
 					be facts, facts and facts but<lb/>
 					no <c type="c">E</c>thics. –
 					</s>
-
-					<s type="es">And now I must say that if I contemplate what <c type="c">E</c>thics really<lb/>
-					would
-					have to be if there were such a science, this result seems to me<lb/>
-					quite
-					obvious.
-					</s>
-
-					<s type="es">It seems to me obvious that nothing we could ever think or<lb/>
-					say should
-					be <emph rend="us1_ch">the</emph> thing.
-					</s>
-
-					<s type="es">That we cannot write a scientific book, the sub<lb rend="shyphen"/>
-					ject matter of which
-					could be intrinsically sublime and above all other<lb/>
-					subject
-					matters.
-					</s>
+					
+					<seg xml:id="clm2" ana="onto:Point" corresp="#fld1" ref="#wittgenstein">
+						<s type="es">And now I must say that if I contemplate what <c type="c">E</c>thics really<lb/>
+							would have to be if there were such a science, this result seems to me<lb/>
+							quite obvious.</s>
+						
+						<s type="es">It seems to me obvious that nothing we could ever think or<lb/>
+							say should be <emph rend="us1_ch">the</emph> thing.</s>
+						
+						<s type="es">That we cannot write a scientific book, the subject matter of which<lb/>
+							could be intrinsically sublime and above all other subject matters.</s>
+					</seg>
 
 					<s type="es">
-						<c type="k">I</c> can only describe my feeling by the metaphor, that, if<lb/>
-					a man
-					could write a book on <c type="c">E</c>thics which really was a book on <c type="c">E</c>thics,
-					this<lb/>
-					book would, with an explosion, destroy all the other books in the
-					world. – <lb/>
+						<c type="k">I</c> can only describe my feeling by the metaphor, <seg xml:id="met1" ana="onto:Metaphor" corresp="#clm2">
+						that, if<lb/>
+						a man could write a book on <c type="c">E</c>thics which really was a book on <c type="c">E</c>thics,
+						this<lb/>
+						book would, with an explosion, destroy all the other books in the world.
+					</seg> – <lb/>
 					</s>
-
-					<s type="es">Our words used as we use them in science, are vessels capable only of
-					con<lb rend="shyphen"/>
-					taining and conveying meaning and sense, <emph rend="us1">natural</emph> meaning
-					an<add rend="our_h">d</add> sense.
-					</s>
+					
+					<seg xml:id="clm3" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld3">
+						Our words used as we use them in 
+						<term xml:id="fld3" ana="onto:Field">science</term>,
+						are vessels capable only of con<lb rend="shyphen"/> 
+						taining and conveying meaning and sense, 
+						<emph rend="us1">natural</emph> meaning 
+						an<add rend="our_h">d</add> sense.
+					</seg>
 
 				</seg>
 			</ab>
@@ -505,69 +518,70 @@
 			<ab>
 				<seg type="wabmarks-secml_h">​</seg>
 				<seg type="publ"><lb/>
-					<s type="es">Ethics, if it is anything, is supernatural and our words will only
-					express<lb/>
-					facts; as a teacup will only hold a teacup full of water and if I
-					were to<lb/>
-					<choice type="dsl_h">
-					<orig type="alt1">
-					<del type="d_h">put</del>
-					</orig>
-					<orig type="alt2">
-					<add rend="i_h">pour</add>
-					</orig>
-					</choice> out a gallon
-					over it. ‒ ‒ ‒</s>
 					<s type="es">
-					<c type="k">I</c> said that so far<del type="dnpc_h"/>
-					as facts and
-					prop<add rend="el_h">o</add>sitions<lb/>
-					are concerned there is only relative value and
-					relative good, right <abbr type="abb">etc.</abbr>
+						<seg xml:id="clm4" ana="onto:Point" ref="#wittgenstein" corresp="#fld1">
+							Ethics, if it is anything, is supernatural and our words will only
+							express<lb/>facts;
+						</seg>
+						<seg xml:id="met2" ana="onto:Metaphor" corresp="#clm4">
+							as a teacup will only hold a teacup full of water and if I
+							were to<lb/>
+							pour a gallon over it.
+						</seg>
 					</s>
-					<lb/>
-					<s type="es">And let me, before I go <add rend="our_h">o</add>n, illustrate this by a rather
-					obvious example.<lb/>
+					
+					<s type="es">
+						<seg xml:id="clm5" ana="onto:Point" ref="#wittgenstein" corresp="#fld3">
+							<c type="k">I</c> said that so far<del type="dnpc_h"/>
+							as facts and prop<add rend="el_h">o</add>sitions<lb/>
+							are concerned there is only relative value and relative good, right <abbr type="abb">etc.</abbr>
+						</seg>
 					</s>
 
-					<s type="es">The right road is the road which leads to an arbitrarily predetermined
-					end<lb/>
-					and it is quite clear to us all that there is no sense in talking
-					about the<lb/>
-					right road apart from such a predetermined goal.
+					<lb/>
+					<s type="es">
+						
+							And let me, before I go <add rend="our_h">o</add>n, illustrate this by a rather obvious example.<lb/>
+						<seg xml:id="ex7" ana="onto:Exemplification" corresp="#clm5">The right road is the road which leads to an arbitrarily predetermined end<lb/>
+							and it is quite clear to us all that there is no sense in talking about the<lb/>
+							right road apart from such a predetermined goal.
+						</seg>
 					</s>
 
 					<s type="es">Now let us see what we<lb/>
-					could possibly mean by the expression
-				<seg type="q">“<emph rend="us1">the</emph> absolutely right road”</seg>.
+					could possibly mean by the expression 
 					</s>
+					
+					<s type="es">
+						<seg xml:id="ex8" ana="onto:Exemplification" corresp="#clm5">
+							“<emph rend="us1">the</emph> absolutely right road”. I think<lb/>
+							it would be the road which <emph rend="us1">everybody</emph> on seeing
+							it would, <emph rend="us1">with logical<lb/>
+								necessity</emph> have to go, or be ashamed for
+							not going.
+						</seg>
+					</s>
+					
+					<s type="es">
+						<seg xml:id="ex9" ana="onto:Exemplification" corresp="#clm5">
+							And similarly the<lb/>
+							<emph rend="us1">absolute</emph>
+							<emph rend="us1">good</emph>, if it is a
+							describable state of affairs would be one which<lb/>
+							everybody, independent of
+							his tastes and inclinations, would <emph rend="us1">necessarily</emph><lb/>
+							bring about or
+							feel guilty for not bringing about. And I want to say that<lb/>
+							such a state of affairs is a chimera.
+						</seg>
+					</s>
+
 
 					<s type="es">
-					<c type="k">I</c> think<lb/>
-					it would be the road which <emph rend="us1">everybody</emph> on seeing
-					it would, <emph rend="us1">with logical<lb/>
-					necessity</emph> have to go, or be ashamed for
-					not going.
-					</s>
-
-					<s type="es">And similarly the<lb/>
-					<emph rend="us1">absolute</emph>
-					<emph rend="us1">good</emph>, if it is a
-					describable state of affairs would be one which<lb/>
-					everybody, independent of
-					his tastes and inclinations, would <emph rend="us1">necessarily</emph>
-					<lb/>
-					bring about or
-					feel guilty for not bringing about.
-					</s>
-
-					<s type="es">And I want to say that<lb/>
-					such a state of affairs is a chimera.
 					</s>
 
 					<s type="es">No state of affairs has in itself,<lb/>
-					<pb facs="Ts-207_6" rend="recto" n="pagename_Ts-207,6 pageref_00"/>
-					<fw type="pagen" place="top left">6)</fw> what I would like to call, the coercive
+					what I would like to call, the coercive
 					power of an absolute judge. –
 					</s>
 					<lb/>
@@ -678,8 +692,7 @@
 					</s>
 
 					<s type="es">And there<lb/>
-					<pb facs="Ts-207_7" rend="recto" n="pagename_Ts-207,7 pageref_00"/>
-					<fw type="pagen" place="top left">7)</fw> the first thing I have to say is, that
+					the first thing I have to say is, that
 					the verbal expression which we give<lb/>
 					to these experiences is
 					nonsense!
@@ -802,14 +815,14 @@
 					<seg type="q">“existence”</seg> or
 					<seg type="q">“wondering”</seg>.
 					</s>
-
-					<s type="es">Now I want<lb/>
-					to impress on you that a certain characteristic misuse of
-					our language runs<lb/>
-					<pb facs="Ts-207_8" rend="recto" n="pagename_Ts-207,8 pageref_00"/>
-					<fw type="pagen" place="top left">8)</fw> through <emph rend="us1">all</emph> ethical and
-					religious expressions.
-					</s>
+					
+					<seg xml:id="clm6" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld1 #fld4">
+						Now I want<lb/>
+						to impress on you that a certain characteristic misuse of
+						our language runs<lb/>
+						through <emph rend="us1">all</emph> ethical and
+						religious expressions.
+					</seg>
 
 					<s type="es">All these expressions <emph rend="us1">seem</emph>,<lb/>
 					<seg type="ct">prima facie</seg>, to be just
@@ -836,21 +849,22 @@
 					valuable jewelry but there seems to<lb/>
 					be some sort of analogy.
 					</s>
-
-					<s type="es">Now all religious terms seem in this sense to be<lb/>
-					used as similes or
-					allegorically.
-					</s>
-
-					<s type="es">For when we speak of God and that he
-					sees<lb/>
-					everything and when we kneel and pray to him all our terms and
-					actions<lb/>
-					seem to be parts of a great and elaborate allegory which
-					represents him as<lb/>
-					a human being of great power whose grace we try to win
-					<abbr type="abb">etc.</abbr>
-					<abbr type="abb">etc.</abbr>
+					
+					<seg xml:id="clm7" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld4">
+						Now all religious terms seem in this sense to be<lb/>
+						used as similes or allegorically.
+					</seg>
+					
+					<s xml:id="ex7" ana="onto:Exemplification" corresp="#clm7">
+						For when we speak of God and that he
+						sees<lb/>
+						everything and when we kneel and pray to him all our terms and
+						actions<lb/>
+						seem to be parts of a great and elaborate allegory which
+						represents him as<lb/>
+						a human being of great power whose grace we try to win
+						<abbr type="abb">etc.</abbr>
+						<abbr type="abb">etc.</abbr>
 					</s>
 
 					<s type="es">But this<lb/>
@@ -913,8 +927,7 @@
 					<s type="es">But when I say they are experiences, surely,<lb/>
 					they are facts; they have
 					taken place then and there, lasted a certain<lb/>
-					<pb facs="Ts-207_9" rend="recto" n="pagename_Ts-207,9 pageref_00"/>
-					<fw type="pagen" place="top left">9)</fw> definite time and consequently are
+					 definite time and consequently are
 					describable.
 					</s>
 
@@ -923,10 +936,12 @@
 					nonsense to say that they have<lb/>
 					absolute value.
 					</s>
+					
+					<seg xml:id="clm8" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld1">
+						And here I have arrived at the main point of this paper:<lb/>
+						it is the paradox that an experience, a fact should seem to have absolute value.
+					</seg>
 
-					<s type="es">And here I have arrived at the main point of this paper:<lb/>
-					it is the paradox that an experience, a fact should seem to have absolute value.
-					</s><lb/>
 					
 					<s type="es">And I will make my point still more acute by saying <seg type="q">“it is<lb/>
 					the paradox that an experience, a fact, should seem to have supernatural<lb/>
@@ -1019,8 +1034,7 @@
 					</s>
 
 					<s type="es">But what then does it mean<lb/>
-					<pb facs="Ts-207_10" rend="recto" n="pagename_Ts-207,10 pageref_00"/>
-					<fw type="pagen" place="top left">10)</fw> to be aware of this miracle at some
+					to be aware of this miracle at some
 					times and not at other times<choice type="o_h">
 					<orig type="o1">.</orig>
 					<orig type="o2">?</orig>
@@ -1085,32 +1099,34 @@
 					the
 					world and that is to say beyond significant language.
 					</s>
+					
+					<seg xml:id="clm9" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld1 #fld4">
+						My whole tendency<lb/>
+						and I believe the tendency of all men who ever tried
+						to write or talk<lb/>
+						<c type="c">E</c>thics or <term xml:id="fld4" ana="onto:Field">Religion</term> was to run against the
+						boundaries of language.
+					</seg>
 
-					<s type="es">My whole tendency<lb/>
-					and I believe the tendency of all men who ever tried
-					to write or talk<lb/>
-					<c type="c">E</c>thics or <c type="c">R</c>eligion was to run against the
-					boundaries of language.
-					</s>
 
 					<s type="es">This<lb/>
 					running against the walls of our cage is perfectly, absolutely
 					hopeless. – <lb/>
 					</s>
+					
+					<seg xml:id="clm10" type="es" ana="onto:Point" ref="#wittgenstein" corresp="#fld1 #fld3">
+						Ethics so far as it springs from the desire to say something about the<lb/>
+						ultimate meaning of life, the absolute good, the absolute valuable, can be<lb/>
+						no science.
+						
+						<lb/>What it says does not add to our knowledge in any sense.
+						
+						<lb/>But it<lb/>
+						is a document of a tendency in the human mind which I personally
+						cannot help<lb/>
+						respecting deeply and I would not for my life ridicule it.
+					</seg>
 
-					<s type="es">Ethics so far as it springs from the desire to say something about the<lb/>
-					ultimate meaning of life, the absolute good, the absolute valuable, can
-					be<lb/>
-					no science.</s>
-
-					<s type="es">What it says does not add to our knowledge in any sense.</s>
-
-					<s type="es">But it<lb/>
-					is a document of a tendency in the human mind which I personally
-					cannot help<lb/>
-					respecting deeply and I would not for my life ridicule
-					it.
-					</s>
 				</seg>
 			</ab>
 		</body>

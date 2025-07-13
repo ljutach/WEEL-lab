@@ -1,0 +1,94 @@
+@prefix ex: <http://example.org/resource/> .
+@prefix onto: <http://purl.org/wittgenstein/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:clm1 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 ;
+    rdfs:comment """although all judgments of relative value can be shown to be mere statements
+							of facts, no statement of fact can ever be, or imply, a judgment of
+							absolute value""" .
+
+ex:clm10 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld3 ;
+    rdfs:comment """Ethics so far as it springs from the desire to say something about the
+						ultimate meaning of life, the absolute good, the absolute valuable, can be
+						no science.
+						
+						What it says does not add to our knowledge in any sense.
+						
+						But it
+						is a document of a tendency in the human mind which I personally
+						cannot help
+						respecting deeply and I would not for my life ridicule it.""" .
+
+ex:clm2 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 ;
+    rdfs:comment """And now I must say that if I contemplate what Ethics really
+							would have to be if there were such a science, this result seems to me
+							quite obvious.
+						
+						It seems to me obvious that nothing we could ever think or
+							say should be the thing.
+						
+						That we cannot write a scientific book, the subject matter of which
+							could be intrinsically sublime and above all other subject matters.""" .
+
+ex:clm3 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld3 ;
+    rdfs:comment """Our words used as we use them in 
+						science,
+						are vessels capable only of con 
+						taining and conveying meaning and sense, 
+						natural meaning 
+						and sense.""" .
+
+ex:clm4 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 ;
+    rdfs:comment """Ethics, if it is anything, is supernatural and our words will only
+							expressfacts;""" .
+
+ex:clm5 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld3 ;
+    rdfs:comment """I said that so far
+							as facts and propositions
+							are concerned there is only relative value and relative good, right etc.""" .
+
+ex:clm6 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld4 ;
+    rdfs:comment """Now I want
+						to impress on you that a certain characteristic misuse of
+						our language runs
+						through all ethical and
+						religious expressions.""" .
+
+ex:clm7 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld4 ;
+    rdfs:comment """Now all religious terms seem in this sense to be
+						used as similes or allegorically.""" .
+
+ex:clm8 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 ;
+    rdfs:comment """And here I have arrived at the main point of this paper:
+						it is the paradox that an experience, a fact should seem to have absolute value.""" .
+
+ex:clm9 a onto:Point ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld4 ;
+    rdfs:comment """My whole tendency
+						and I believe the tendency of all men who ever tried
+						to write or talk
+						Ethics or Religion was to run against the
+						boundaries of language.""" .
+

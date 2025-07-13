@@ -77,17 +77,81 @@
     </xsl:template>
     
     <!-- Named Entities -->
+    
+    <!-- Person-->
     <xsl:template match="tei:persName">
-        <span class="name"><xsl:apply-templates/></span>
+        <xsl:choose>
+            <!-- If persName has no text, skip rendering -->
+            <xsl:when test="normalize-space(.) = ''"/>
+            <xsl:otherwise>
+                <span class="person" title="class:Person"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
-    <xsl:template match="tei:placeName">
-        <span class="place"><xsl:apply-templates/></span>
+    <!-- Field -->
+    <xsl:template match="tei:term">
+        <span class="field" title="class:Field">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
     
-    <xsl:template match="tei:name">
-        <span class="name"><xsl:apply-templates/></span>
+    <!-- External References -->
+    <xsl:template match="tei:bibl">
+        <span class="source" title="class:WittgensteinExternalSource">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
+    
+    <!-- Point -->
+    <!-- Point as <seg> inside <s> -->
+    <xsl:template match="tei:s[tei:seg[@ana='onto:Point']]">
+        <div class="sentence-with-point" title="class:Point(Claim)">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="tei:seg[@ana='onto:Point']">
+        <span class="point" title="class:Point(Claim)">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    
+    <!-- Point as <s> -->
+    <xsl:template match="tei:s[@ana='onto:Point']">
+        <div class="point-sentence" title="class:Point(Claim)">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+
+
+
+    
+    
+    <!-- Perspective -->
+    <xsl:template match="tei:s[@ana='onto:Perspective'] | tei:seg[@ana='onto:Perspective']">
+        <div class="perspective" title="class:Perspective">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <!-- Exemplification -->
+    <xsl:template match="tei:s[@ana='onto:Exemplification'] | tei:seg[@ana='onto:Exemplification']">
+        <div class="example" title="class:Exemplification">
+            <xsl:apply-templates/>
+        </div>
+    </xsl:template>
+    
+    <!-- Metaphor -->
+    <xsl:template match="tei:seg[@ana='onto:Metaphor']">
+        <span class="metaphor" title="class:Metaphor">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    
+    
     
     <!-- Default: apply templates to everything else -->
     <xsl:template match="*">

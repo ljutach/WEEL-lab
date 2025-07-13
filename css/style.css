@@ -2,7 +2,7 @@
 body {
     font-family: 'Calibri', serif;
     max-width: 720px;
-    margin: 3em auto;
+    margin: 3em auto; 
     line-height: 1.7;
     color: #222;
     background: #fff598;
@@ -116,14 +116,62 @@ h2 {
 /* === Inline Elements === */
 
 
-.name {
+.person {
     font-weight: bold;
-    color: darkblue;
+    color: rgb(76, 76, 236);
+    text-decoration: underline;
 }
 
-.place {
-    color: darkgreen;
+.perspective {
+    background: rgb(171, 224, 213);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-left: 4px solid #88f;
+    text-decoration: underline;
+    display: inline;
 }
+
+.point {
+    background: rgb(238, 129, 173);
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-left: 4px solid #aa0;
+    text-decoration: underline;
+    display: inline;
+}
+
+.example {
+    background: rgb(251, 153, 61); 
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-left: 4px solid #aa0; 
+    text-decoration: underline;
+    display: inline;
+}
+
+.metaphor {
+    background: #e0f7fa;
+    font-style: italic;
+    border-left: 4px solid #4fc3d3;
+    padding: 0.8em;
+    margin: 1em 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.source {
+    font-weight: bold;
+    font-style: italic;
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.field {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
 
 /* === Links and Misc === */
 a {
