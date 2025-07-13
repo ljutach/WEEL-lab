@@ -544,9 +544,10 @@
     webvowl.util().getUrlParameter = function () {
         return { "iri": "wittgenstein_ontology.json" };
     };
-</script>
-<script>
-    window.onload = webvowl.app().initialize;
+
+    window.onload = function () {
+        webvowl.app().initialize();
+    };
 </script>
 
 </body>
