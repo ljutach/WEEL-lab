@@ -541,14 +541,13 @@
 <script src="js/webvowl.app.js"></script>
 
 <script>
-    window.onload = function () {
-        webvowl.app().options().setOntologyDataPath("wittgenstein_ontology.json");
-        webvowl.app().initialize();
+    webvowl.util().getUrlParameter = function () {
+        return { "iri": "wittgenstein_ontology.json" };
     };
 </script>
-
-
-<script>window.onload = webvowl.app().initialize;</script>
+<script>
+    window.onload = webvowl.app().initialize;
+</script>
 
 </body>
 </html>
