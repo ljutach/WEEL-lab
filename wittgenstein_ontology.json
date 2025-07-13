@@ -1,0 +1,1774 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.3-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl", "http://www.loa-cnr.it/ontologies/CommonSenseMapping" ],
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "comments" : {
+      "undefined" : " \n        \nWittgenstein ontology (Work in progress, 2007-), ed. Alois Pichler (Wittgenstein Archives at the University of Bergen (WAB)) in cooperation with Øyvind Liland Gjesdal (University of Bergen Library, Section for Digital Systems). Released under the Creative Commons license CC BY-NC 4.0.\n\nThis file can be edited in ontology editors such as Protégé, and installed in Semantic Web applications such as WAB's \"Wittgenstein ontology explorer\" (http://wab.uib.no/sfb/). For contributors, provenance of data and acknowledgments see WAB's \"Semantic faceted search and browsing of the Wittgenstein Nachlass\" site (http://wab.uib.no/wab_facets.page/).\n        \n       \n        \n        "
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 33,
+    "objectPropertyCount" : 34,
+    "datatypePropertyCount" : 10,
+    "individualCount" : 17
+  },
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "24",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Chapter",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Chapter"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Point",
+      "undefined" : "Point (Claim)"
+    },
+    "comment" : {
+      "undefined" : "Point (now called \"Claim\"), subclass of Subject: A philosophical statement. Example of instance:\n            Logical analysis is essential to philosophy "
+    },
+    "id" : "2",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "24",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Language",
+      "undefined" : "Language"
+    },
+    "individuals" : [ {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#eng",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "eng",
+        "undefined" : "English"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#rus",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "rus",
+        "undefined" : "Russian"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#lat",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "lat",
+        "undefined" : "Latin"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#deu",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "deu",
+        "undefined" : "German"
+      }
+    } ],
+    "id" : "43",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Part",
+      "undefined" : "Part"
+    },
+    "comment" : {
+      "undefined" : "Part"
+    },
+    "id" : "44",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "51" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "50"
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "47"
+  }, {
+    "instances" : 0,
+    "union" : [ "54", "52", "27", "51" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "53"
+  }, {
+    "instances" : 0,
+    "union" : [ "54", "52", "1", "27" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "61"
+  }, {
+    "instances" : 0,
+    "union" : [ "52", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "62"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "51" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "63"
+  }, {
+    "instances" : 0,
+    "union" : [ "54", "52", "1", "27" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Subject",
+      "undefined" : "Subject"
+    },
+    "subClasses" : [ "2", "21", "4", "70", "74", "75", "14", "43", "76" ],
+    "comment" : {
+      "undefined" : "Subject: An entity of the Wittgenstein domain that is neither a source nor a person."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#Metaphor",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metaphor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/TextSubGenre",
+      "undefined" : "Text subgenre"
+    },
+    "individuals" : [ {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#set",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "set",
+        "undefined" : "Set"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#preface",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "preface",
+        "undefined" : "Preface (parts)"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#secretcode",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "secretcode",
+        "undefined" : "Coded text"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#pos",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "pos",
+        "undefined" : "Pos"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#logicnotation",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "logicnotation",
+        "undefined" : "Logical notation"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#tba",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "tba",
+        "undefined" : "Tba."
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notationnotation",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "notationnotation",
+        "undefined" : "Notation [not specified]"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#root",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "root",
+        "undefined" : "Root"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#graphicnotation",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "graphicnotation",
+        "undefined" : "Graphic"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#music",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "music",
+        "undefined" : "Musical notation"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#mathsnotation",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "mathsnotation",
+        "undefined" : "Mathematical notation"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#p",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "p",
+        "undefined" : "Notation [not defined]"
+      }
+    }, {
+      "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#power",
+      "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+      "labels" : {
+        "IRI-based" : "power",
+        "undefined" : "Power"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "<p style=\"margin-top: 0\">\n      The text subgenre of a source or part of source. Example of instance: logical notation; secret code"
+    },
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Perspective",
+      "undefined" : "Perspective"
+    },
+    "comment" : {
+      "undefined" : "Perspective, subclass of Subject: A philosophical or other contextualizing perspective "
+    },
+    "id" : "70",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Correspondence",
+      "undefined" : "Letter or postcard"
+    },
+    "comment" : {
+      "undefined" : "Letter or postcard"
+    },
+    "id" : "16",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Field",
+      "undefined" : "Field"
+    },
+    "comment" : {
+      "undefined" : "Field, subclass of Subject: A field of philosophical discussion. Has\n            subclasses: Metaphysics; Epistemology a.o. Example of subclass structure: Field >\n            Epistemology > Scepticism > Rule-FollowingScepticism "
+    },
+    "id" : "76",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Date",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Date",
+      "undefined" : "Subject"
+    },
+    "comment" : {
+      "undefined" : "Date, subclass of Subject: A date, either day-exact or estimated date span.\n            Example of instance: 19361105; 19450101-19451231 "
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Issue",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Issue",
+      "undefined" : "Issue (Concept)"
+    },
+    "comment" : {
+      "undefined" : "Issue (now called \"Concept\"), subclass of Subject: A philosophical concept. Example of instance:\n            philosophy; logical analysis "
+    },
+    "id" : "75",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bemerkung",
+      "undefined" : "Nachlass Bemerkung"
+    },
+    "comment" : {
+      "undefined" : "Bemerkung, subclass of Wittgenstein Primary source: Corresponding roughly to a\n            single remark in a Wittgenstein primary source, identified by the\n            Wittgenstein Archives through a “siglum” which is composed of item identifier, page\n            identifier(s) and position identifier(s). Example of instance: Ts-310,21[2]et22[1]\n        "
+    },
+    "id" : "27",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WittgensteinSource",
+      "undefined" : "WittgensteinSource"
+    },
+    "subClasses" : [ "108", "106", "52", "93", "27", "87", "16", "44", "89" ],
+    "comment" : {
+      "undefined" : "Wittgenstein primary source, subclass of Primary source: A primary source for\n            Wittgenstein scholarship, authored or co-authored by Wittgenstein."
+    },
+    "id" : "9",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiaryEntry",
+      "undefined" : "Calendar entry"
+    },
+    "id" : "41",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#Exemplification",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Exemplification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "118",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#MS",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MS",
+      "undefined" : "MS"
+    },
+    "comment" : {
+      "undefined" : "MS, subclass of Wittgenstein Primary Source: A Wittgenstein primary source, handwritten. Example of instance: Ms-115; Ms-139a "
+    },
+    "id" : "87",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/SecondarySource",
+      "undefined" : "Secondary Source"
+    },
+    "comment" : {
+      "undefined" : "Secondary source: A secondary source for Wittgenstein scholarship, not\n            authored nor co-authored by Wittgenstein, but referring to Wittgenstein. Example of instance: MatarAnat_2009; WallgrenThomas_2008"
+    },
+    "id" : "51",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Source",
+      "undefined" : "Source"
+    },
+    "subClasses" : [ "51", "67" ],
+    "comment" : {
+      "undefined" : "Source: A primary or secondary source."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Werk",
+      "undefined" : "Work"
+    },
+    "comment" : {
+      "undefined" : "Work, subclass of Wittgenstein Primary Source: A publication of a Wittgenstein\n            primary source / of a selection from Wittgenstein primary sources which has become standard and is known as a \"work by Wittgenstein\". Example of instance: Philosophical Investigations; Culture and Value\n        "
+    },
+    "id" : "52",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WittgensteinExternalSource",
+      "undefined" : "WittgensteinExternalSource"
+    },
+    "comment" : {
+      "undefined" : "External primary source, subclass of Primary source: A primary source for\n            Wittgenstein scholarship, not authored or co-authored by Wittgenstein, but referred to\n            in a Wittgenstein primary source. Example of instance: Goethe's Faust; Augustine's \n            Confessiones "
+    },
+    "id" : "54",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Person",
+      "undefined" : "Person"
+    },
+    "comment" : {
+      "undefined" : "Person: A historical person. Example of instance:\n      Plato; Paul Wittgenstein "
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/PrimarySource",
+      "undefined" : "Primary Source"
+    },
+    "subClasses" : [ "9", "83", "54", "72" ],
+    "comment" : {
+      "undefined" : "Primary Source: A primary source for Wittgenstein scholarship, authored or\n            co-authored by Wittgenstein, or if not by Wittgenstein, referred to by\n            Wittgenstein."
+    },
+    "id" : "67",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#LectureNotes",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LectureNotes",
+      "undefined" : "Lecture notes"
+    },
+    "id" : "83",
+    "superClasses" : [ "67" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "51", "67" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "127"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "70", "74", "75", "76" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "128"
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "129", "130" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "114"
+  }, {
+    "instances" : 0,
+    "union" : [ "6", "129", "130" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "115"
+  }, {
+    "instances" : 0,
+    "union" : [ "27", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "18"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "70", "74", "75", "76" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "36"
+  }, {
+    "instances" : 0,
+    "union" : [ "51", "67" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/MS",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/MS"
+    },
+    "id" : "130"
+  }, {
+    "instances" : 0,
+    "union" : [ "27", "44" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Chapter",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chapter",
+      "undefined" : "Chapter"
+    },
+    "comment" : {
+      "undefined" : "Chapter, subclass of Wittgenstein Primary Source: A single chapter in a\n            Wittgenstein primary source. Example of instance: Ts-213,chapter \"Verstehen\"\n        "
+    },
+    "id" : "108",
+    "superClasses" : [ "9" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "70" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "56"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "70" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Sentence",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sentence",
+      "undefined" : "Sentence"
+    },
+    "comment" : {
+      "undefined" : "Sentence, subclass of Wittgenstein Primary Source: A single sentence in a\n            Wittgenstein primary source. Example of instance: Ts-310,21[2]et22[1]_1;\n            Ts-310,21[2]et22[1]_2 "
+    },
+    "id" : "93",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TS",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/TS"
+    },
+    "id" : "129"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#TS",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TS",
+      "undefined" : "TS"
+    },
+    "comment" : {
+      "undefined" : "TS, subclass of Wittgenstein Primary source: A Wittgenstein primary source, typed. Example of instance: Ts-213; Ts-310 "
+    },
+    "id" : "106",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Place",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scholar/0.1/Place",
+      "undefined" : "Place"
+    },
+    "comment" : {
+      "undefined" : "Place, subclass of Subject: A place. Example of instance: Skjolden; Cambridge\n        "
+    },
+    "id" : "74",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Diary",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diary",
+      "undefined" : "Diary"
+    },
+    "subClasses" : [ "41" ],
+    "id" : "72",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#Analogy",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Analogy"
+    },
+    "subClasses" : [ "118", "77" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Recollection",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recollection",
+      "undefined" : "Recollection or discussion notes"
+    },
+    "id" : "89",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#claims",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "claims"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPartOf",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isPartOf",
+      "undefined" : "isPartOf"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "isPartOf"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#identifier",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContainedIn",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isContainedIn",
+      "undefined" : "isContainedIn"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receives",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "receives",
+      "undefined" : "receives"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasPart",
+    "inverse" : "7",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "undefined" : "hasPart"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "hasPart"
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receiver",
+    "inverse" : "15",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "receiver"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "range" : "5",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "24",
+    "subproperty" : [ "25" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPro",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isPro",
+      "undefined" : "isPro"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "isPro"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDiscussedIn",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isDiscussedIn",
+      "undefined" : "isDiscussedIn"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "isDiscussedIn"
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sender",
+    "inverse" : "39",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "sender",
+      "undefined" : "sender"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isScheduledInMeeting",
+    "inverse" : "42",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "isScheduledInMeeting",
+      "undefined" : "isScheduledInMeeting"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasVariant",
+    "inverse" : "45",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasVariant",
+      "undefined" : "variant"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "A property for stating that a Bemerkung is or contains a variant of another \nBemerkung."
+    },
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isWorkPublishedFrom",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isWorkPublishedFrom",
+      "undefined" : "isWorkPublishedFrom"
+    },
+    "domain" : "47",
+    "comment" : {
+      "undefined" : "isWorkPublishedFrom"
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#exemplifiedBy",
+    "inverse" : "57",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "exemplifiedBy"
+    },
+    "domain" : "56",
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#contains",
+    "inverse" : "13",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "contains",
+      "undefined" : "contains"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedAgainstIn",
+    "inverse" : "60",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isArguedAgainstIn",
+      "undefined" : "isArguedAgainstIn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "isArguedAgainstIn"
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeAfter",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "madeAfter",
+      "undefined" : "made after"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "range" : "67",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/hasAuthor",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "scholar/0.1/hasAuthor",
+      "undefined" : "hasAuthor"
+    },
+    "domain" : "53",
+    "comment" : {
+      "undefined" : "hasAuthor"
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#hasPerspective",
+    "inverse" : "25",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasPerspective"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "range" : "72",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "67",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#isPerspectiveOf",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPerspectiveOf"
+    },
+    "superproperty" : [ "23" ],
+    "domain" : "70",
+    "attributes" : [ "object", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#schedulesMeetingWith",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "schedulesMeetingWith",
+      "undefined" : "schedulesMeetingWith"
+    },
+    "domain" : "41",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasDate",
+    "inverse" : "79",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDate",
+      "undefined" : "hasDate"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "hasDate"
+    },
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "range" : "11",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "11",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "67",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "67",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "9",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "9",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "9",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "9",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "9",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "9",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingNote",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "meetingNote",
+      "undefined" : "meeting note"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContra",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isContra",
+      "undefined" : "isContra"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "isContra"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingPlace",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "meetingPlace"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notation",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "notation",
+      "undefined" : "notation"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Used as a short name for a resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#with",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "with",
+      "undefined" : "with"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "range" : "9",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#exemplifies",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "exemplifies"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingTime",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "meetingTime"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isReferredToIn",
+    "inverse" : "102",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "isReferredToIn",
+      "undefined" : "isReferredToIn"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "isReferredToIn"
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "range" : "5",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "5",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "9",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "9",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "5",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "5",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "5",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasOtherVersion",
+    "inverse" : "113",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasOtherVersion",
+      "undefined" : "hasOtherVersion"
+    },
+    "domain" : "114",
+    "comment" : {
+      "undefined" : "hasOtherVersion"
+    },
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeBefore",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "madeBefore"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#created",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "created",
+      "undefined" : "created"
+    },
+    "domain" : "24",
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasFacsView",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasFacsView",
+      "undefined" : "has facs view"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "<p style=\"margin-top: 0\">\n      Is used to point at a wittgensteinsource facs view URI."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#language",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "language",
+      "undefined" : "language"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#treatedIn",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "treatedIn"
+    },
+    "domain" : "76",
+    "attributes" : [ "object", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPublishedInWork",
+    "inverse" : "46",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "isPublishedInWork",
+      "undefined" : "isPublishedInWork"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "isPublishedInWork"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping#isAbout",
+    "baseIri" : "http://www.loa-cnr.it/ontologies/CommonSenseMapping",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "isAbout"
+    },
+    "domain" : "70",
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDateOf",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isDateOf",
+      "undefined" : "isDateOf"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "isDateOf"
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "range" : "21",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "21",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#refersTo",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "refersTo",
+      "undefined" : "refersTo"
+    },
+    "domain" : "50",
+    "comment" : {
+      "undefined" : "refersTo"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedForIn",
+    "inverse" : "26",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isArguedForIn",
+      "undefined" : "isArguedForIn"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "isArguedForIn"
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sends",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "sends"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#discusses",
+    "inverse" : "35",
+    "baseIri" : "https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "discusses",
+      "undefined" : "discusses"
+    },
+    "domain" : "127",
+    "comment" : {
+      "undefined" : "Discusses"
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  } ]
+}

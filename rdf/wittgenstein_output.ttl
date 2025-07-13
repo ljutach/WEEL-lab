@@ -1,18 +1,8 @@
-@prefix ex: <http://example.org/resource/> .
-@prefix onto: <http://purl.org/wittgenstein/ont#> .
+@prefix ex: <https://ljutach.github.io/WEEL-lab/resource/> .
+@prefix onto: <https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ex:clm1 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1 ;
-    rdfs:comment """although all judgments of relative value can be shown to be mere statements
-							of facts, no statement of fact can ever be, or imply, a judgment of
-							absolute value""" .
-
 ex:clm10 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1,
-        ex:fld3 ;
     rdfs:comment """Ethics so far as it springs from the desire to say something about the
 						ultimate meaning of life, the absolute good, the absolute valuable, can be
 						no science.
@@ -22,11 +12,162 @@ ex:clm10 a onto:Point ;
 						But it
 						is a document of a tendency in the human mind which I personally
 						cannot help
-						respecting deeply and I would not for my life ridicule it.""" .
+						respecting deeply and I would not for my life ridicule it.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld3 .
+
+ex:clm3 a onto:Point ;
+    rdfs:comment """Our words used as we use them in 
+						science,
+						are vessels capable only of con 
+						taining and conveying meaning and sense, 
+						natural meaning 
+						and sense.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld3 .
+
+ex:clm6 a onto:Point ;
+    rdfs:comment """Now I want
+						to impress on you that a certain characteristic misuse of
+						our language runs
+						through all ethical and
+						religious expressions.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld4 .
+
+ex:clm7 a onto:Point ;
+    rdfs:comment """Now all religious terms seem in this sense to be
+						used as similes or allegorically.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld4 .
+
+ex:clm8 a onto:Point ;
+    rdfs:comment """And here I have arrived at the main point of this paper:
+						it is the paradox that an experience, a fact should seem to have absolute value.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 .
+
+ex:clm9 a onto:Point ;
+    rdfs:comment """My whole tendency
+						and I believe the tendency of all men who ever tried
+						to write or talk
+						Ethics or Religion was to run against the
+						boundaries of language.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1,
+        ex:fld4 .
+
+ex:ex1 a onto:Exemplification ;
+    rdfs:comment "Ethics is the enquiry into what is valuable" ;
+    onto:exemplifies ex:persp1 .
+
+ex:ex2 a onto:Exemplification ;
+    rdfs:comment "into what is really important" ;
+    onto:exemplifies ex:persp1 .
+
+ex:ex3 a onto:Exemplification ;
+    rdfs:comment "the enquiry into the meaning of life" ;
+    onto:exemplifies ex:persp1 .
+
+ex:ex4 a onto:Exemplification ;
+    rdfs:comment "what makes life worth living" ;
+    onto:exemplifies ex:persp1 .
+
+ex:ex5 a onto:Exemplification ;
+    rdfs:comment "the right way of living" ;
+    onto:exemplifies ex:persp1 .
+
+ex:ex6 a onto:Exemplification ;
+    rdfs:comment """Let me explain this: Suppose one of you were an omniscient
+							person and therefore knew all the movements of all the bodies in the world
+							dead or alive and that he also knew all the states of mind of all human
+							beings that ever lived, and suppose this man wrote all he knew in a big
+							book, then this book would contain the whole description of the world; and
+							what I want to say is, that this book would contain nothing that we would
+							call an ethical judgment or anything that would logically imply such a
+							judgment.""" ;
+    onto:exemplifies ex:clm1 .
+
+ex:ex7 a onto:Exemplification ;
+    rdfs:comment """The right road is the road which leads to an arbitrarily predetermined end
+							and it is quite clear to us all that there is no sense in talking about the
+							right road apart from such a predetermined goal.""" ;
+    onto:exemplifies ex:clm5 .
+
+ex:ex8 a onto:Exemplification ;
+    rdfs:comment """“the absolutely right road”. I think
+							it would be the road which everybody on seeing
+							it would, with logical
+								necessity have to go, or be ashamed for
+							not going.""" ;
+    onto:exemplifies ex:clm5 .
+
+ex:ex9 a onto:Exemplification ;
+    rdfs:comment """And similarly the
+							absolute
+							good, if it is a
+							describable state of affairs would be one which
+							everybody, independent of
+							his tastes and inclinations, would necessarily
+							bring about or
+							feel guilty for not bringing about. And I want to say that
+							such a state of affairs is a chimera.""" ;
+    onto:exemplifies ex:clm5 .
+
+ex:fld2 a onto:Field ;
+    rdfs:label "Aesthetics" .
+
+ex:galton a onto:Person ;
+    rdfs:label "Galton" .
+
+ex:met1 a onto:Metaphor ;
+    rdfs:comment """that, if
+						a man could write a book on Ethics which really was a book on Ethics,
+						this
+						book would, with an explosion, destroy all the other books in the world.""" ;
+    onto:exemplifies ex:clm2 .
+
+ex:met2 a onto:Metaphor ;
+    rdfs:comment """as a teacup will only hold a teacup full of water and if I
+							were to
+							pour a gallon over it.""" ;
+    onto:exemplifies ex:clm4 .
+
+ex:persp2 a onto:Perspective ;
+    rdfs:comment """Now I am going to use the term Ethics in a slightly
+						wider sense,
+						in a sense in fact which includes what I believe to be the
+						most essential
+						part of what is generally called 
+						
+							Aesthetics
+						.""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 .
+
+ex:persp3 a onto:Perspective ;
+    rdfs:comment "“Nothing is either good or bad, but thinking makes it so.”" ;
+    onto:claimedBy ex:shakespeare ;
+    onto:isAbout ex:fld1 .
+
+ex:src1 a onto:WittgensteinExternalSource ;
+    rdfs:label "“Principia Ethica”" ;
+    onto:hasAuthor ex:moore .
+
+ex:src2 a onto:WittgensteinExternalSource ;
+    rdfs:label "Hamlet" ;
+    onto:hasAuthor ex:shakespeare .
+
+ex:clm1 a onto:Point ;
+    rdfs:comment """although all judgments of relative value can be shown to be mere statements
+							of facts, no statement of fact can ever be, or imply, a judgment of
+							absolute value""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 .
 
 ex:clm2 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1 ;
     rdfs:comment """And now I must say that if I contemplate what Ethics really
 							would have to be if there were such a science, this result seems to me
 							quite obvious.
@@ -35,60 +176,42 @@ ex:clm2 a onto:Point ;
 							say should be the thing.
 						
 						That we cannot write a scientific book, the subject matter of which
-							could be intrinsically sublime and above all other subject matters.""" .
-
-ex:clm3 a onto:Point ;
+							could be intrinsically sublime and above all other subject matters.""" ;
     onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld3 ;
-    rdfs:comment """Our words used as we use them in 
-						science,
-						are vessels capable only of con 
-						taining and conveying meaning and sense, 
-						natural meaning 
-						and sense.""" .
+    onto:isAbout ex:fld1 .
 
 ex:clm4 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1 ;
     rdfs:comment """Ethics, if it is anything, is supernatural and our words will only
-							expressfacts;""" .
+							expressfacts;""" ;
+    onto:claimedBy ex:wittgenstein ;
+    onto:isAbout ex:fld1 .
+
+ex:moore a onto:Person ;
+    rdfs:label "Prof. Moore" .
+
+ex:shakespeare a onto:Person .
 
 ex:clm5 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld3 ;
     rdfs:comment """I said that so far
 							as facts and propositions
-							are concerned there is only relative value and relative good, right etc.""" .
-
-ex:clm6 a onto:Point ;
+							are concerned there is only relative value and relative good, right etc.""" ;
     onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1,
-        ex:fld4 ;
-    rdfs:comment """Now I want
-						to impress on you that a certain characteristic misuse of
-						our language runs
-						through all ethical and
-						religious expressions.""" .
+    onto:isAbout ex:fld3 .
 
-ex:clm7 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld4 ;
-    rdfs:comment """Now all religious terms seem in this sense to be
-						used as similes or allegorically.""" .
+ex:fld3 a onto:Field ;
+    rdfs:label "science" .
 
-ex:clm8 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1 ;
-    rdfs:comment """And here I have arrived at the main point of this paper:
-						it is the paradox that an experience, a fact should seem to have absolute value.""" .
+ex:fld4 a onto:Field ;
+    rdfs:label "Religion" .
 
-ex:clm9 a onto:Point ;
-    onto:claimedBy ex:wittgenstein ;
-    onto:isAbout ex:fld1,
-        ex:fld4 ;
-    rdfs:comment """My whole tendency
-						and I believe the tendency of all men who ever tried
-						to write or talk
-						Ethics or Religion was to run against the
-						boundaries of language.""" .
+ex:persp1 a onto:Perspective ;
+    rdfs:comment "“Ethics is the general enquiry intowhat is good.”" ;
+    onto:claimedBy ex:moore ;
+    onto:isAbout ex:fld1 .
+
+ex:fld1 a onto:Field ;
+    rdfs:label "Ethics" .
+
+ex:wittgenstein a onto:Person ;
+    rdfs:label "Ludwig Wittgenstein" .
 

@@ -1,25 +1,26 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/wittgensteinsource/ont/"
-     xml:base="http://purl.org/wittgensteinsource/ont/"
-     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:tei="http://www.tei-c.org/ns/1.0"
-     xmlns:wgs="http://wittgensteinsource.org/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:flub="http://ub.uib.no/flibub"
-     xmlns:inst="http://purl.org/wittgensteinsource/ont/instances/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:scho="http://purl.org/wittgensteinsource/ont/scholar/0.1/"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://wab.uib.no/cost-a32_rdf/wittgenstein_model_pubby.owl">
+<rdf:RDF
+    xmlns="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#"
+    xml:base="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:wgs="http://wittgensteinsource.org/"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:flub="http://ub.uib.no/flibub"
+    xmlns:inst="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#instances/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:scho="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl">
         <rdfs:comment> 
         
 Wittgenstein ontology (Work in progress, 2007-), ed. Alois Pichler (Wittgenstein Archives at the University of Bergen (WAB)) in cooperation with Øyvind Liland Gjesdal (University of Bergen Library, Section for Digital Systems). Released under the Creative Commons license CC BY-NC 4.0.
@@ -61,37 +62,37 @@ This file can be edited in ontology editors such as Protégé, and installed in 
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/contains -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#contains -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/contains">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isContainedIn"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#contains">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContainedIn"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <rdfs:label>contains</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/discusses -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#discusses -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/discusses">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isDiscussedIn"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#discusses">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDiscussedIn"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Field"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Issue"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Place"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Issue"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Place"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -101,38 +102,38 @@ This file can be edited in ontology editors such as Protégé, and installed in 
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/hasDate -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasDate -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/hasDate">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isDateOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Date"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasDate">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDateOf"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Date"/>
         <rdfs:comment>hasDate</rdfs:comment>
         <rdfs:label>hasDate</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/hasOtherVersion -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasOtherVersion -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/hasOtherVersion">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/hasOtherVersion"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasOtherVersion">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasOtherVersion"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Chapter"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/MS"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/TS"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Chapter"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/MS"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TS"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Chapter"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/MS"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/TS"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Chapter"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/MS"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TS"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -142,16 +143,16 @@ This file can be edited in ontology editors such as Protégé, and installed in 
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/hasPart -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/hasPart">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isPartOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasPart">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPartOf"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Part"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -161,13 +162,13 @@ This file can be edited in ontology editors such as Protégé, and installed in 
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/hasVariant -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasVariant -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/hasVariant">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/hasVariant"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasVariant">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasVariant"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:comment xml:lang="en">A property for stating that a Bemerkung is or contains a variant of another 
 Bemerkung.</rdfs:comment>
         <rdfs:label>variant</rdfs:label>
@@ -175,81 +176,81 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isArguedAgainstIn -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedAgainstIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isArguedAgainstIn">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isContra"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedAgainstIn">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContra"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:comment>isArguedAgainstIn</rdfs:comment>
         <rdfs:label>isArguedAgainstIn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isArguedForIn -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedForIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isArguedForIn">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isPro"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isArguedForIn">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPro"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:comment>isArguedForIn</rdfs:comment>
         <rdfs:label>isArguedForIn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isContainedIn -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContainedIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isContainedIn">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContainedIn">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:label>isContainedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isContra -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContra -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isContra">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isContra">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
         <rdfs:comment>isContra</rdfs:comment>
         <rdfs:label>isContra</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isDateOf -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDateOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isDateOf">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Date"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDateOf">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Date"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:comment>isDateOf</rdfs:comment>
         <rdfs:label>isDateOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isDiscussedIn -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDiscussedIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isDiscussedIn">
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isDiscussedIn">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Field"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Issue"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Place"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Issue"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Place"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -259,45 +260,45 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isPartOf -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isPartOf">
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPartOf">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Part"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>isPartOf</rdfs:comment>
         <rdfs:label>isPartOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isPro -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPro -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isPro">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPro">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
         <rdfs:comment>isPro</rdfs:comment>
         <rdfs:label>isPro</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isPublishedInWork -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPublishedInWork -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isPublishedInWork">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/isWorkPublishedFrom"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isPublishedInWork">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isWorkPublishedFrom"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Part"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Werk"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -307,25 +308,25 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isReferredToIn -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isReferredToIn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isReferredToIn">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/refersTo"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isReferredToIn">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#refersTo"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Werk"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinExternalSource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -335,83 +336,83 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isScheduledInMeeting -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isScheduledInMeeting -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isScheduledInMeeting">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/schedulesMeetingWith"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isScheduledInMeeting">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#schedulesMeetingWith"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
         <rdfs:label>isScheduledInMeeting</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/isWorkPublishedFrom -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isWorkPublishedFrom -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/isWorkPublishedFrom">
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#isWorkPublishedFrom">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Part"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Werk"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
         <rdfs:comment>isWorkPublishedFrom</rdfs:comment>
         <rdfs:label>isWorkPublishedFrom</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/language -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#language -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/language">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#language">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language"/>
         <rdfs:label>language</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/receiver -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receiver -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/receiver">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/receives"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Correspondence"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receiver">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receives"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/receives -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receives -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/receives">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Correspondence"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#receives">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence"/>
         <rdfs:label>receives</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/refersTo -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#refersTo -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/refersTo">
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#refersTo">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Werk"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinExternalSource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -421,50 +422,50 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/schedulesMeetingWith -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#schedulesMeetingWith -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/schedulesMeetingWith">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#schedulesMeetingWith">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
         <rdfs:label>schedulesMeetingWith</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/sender -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sender -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/sender">
-        <owl:inverseOf rdf:resource="http://purl.org/wittgensteinsource/ont/sends"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/Correspondence"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sender">
+        <owl:inverseOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sends"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
         <rdfs:label>sender</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/sends -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sends -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/sends">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/Correspondence"/>
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#sends">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/hasAuthor -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/hasAuthor -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/hasAuthor">
+    <owl:ObjectProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/hasAuthor">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/Werk"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinExternalSource"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
         <rdfs:comment>hasAuthor</rdfs:comment>
         <rdfs:label>hasAuthor</rdfs:label>
     </owl:ObjectProperty>
@@ -474,8 +475,8 @@ Bemerkung.</rdfs:comment>
     <!-- http://www.loa-cnr.it/ontologies/CommonSenseMapping#claims -->
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#claims">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
     </owl:ObjectProperty>
     
 
@@ -487,8 +488,8 @@ Bemerkung.</rdfs:comment>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -504,8 +505,8 @@ Bemerkung.</rdfs:comment>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-                    <rdf:Description rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+                    <rdf:Description rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -517,8 +518,8 @@ Bemerkung.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#hasPerspective">
         <owl:inverseOf rdf:resource="http://www.loa-cnr.it/ontologies/CommonSenseMapping#isPerspectiveOf"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
     </owl:ObjectProperty>
     
 
@@ -526,8 +527,8 @@ Bemerkung.</rdfs:comment>
     <!-- http://www.loa-cnr.it/ontologies/CommonSenseMapping#isAbout -->
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#isAbout">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Field"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field"/>
     </owl:ObjectProperty>
     
 
@@ -536,8 +537,8 @@ Bemerkung.</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#isPerspectiveOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person"/>
     </owl:ObjectProperty>
     
 
@@ -545,8 +546,8 @@ Bemerkung.</rdfs:comment>
     <!-- http://www.loa-cnr.it/ontologies/CommonSenseMapping#treatedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#treatedIn">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Field"/>
-        <rdfs:range rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective"/>
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field"/>
+        <rdfs:range rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective"/>
     </owl:ObjectProperty>
     
 
@@ -562,19 +563,19 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/created -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#created -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/created">
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#created">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label>created</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/hasFacsView -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasFacsView -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/hasFacsView">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#hasFacsView">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>&lt;p style=&quot;margin-top: 0&quot;&gt;
       Is used to point at a wittgensteinsource facs view URI.</rdfs:comment>
@@ -583,65 +584,65 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/identifier -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#identifier -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/identifier">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#identifier">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>identifier</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/madeAfter -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeAfter -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/madeAfter">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeAfter">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label>made after</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/madeBefore -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeBefore -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/madeBefore">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#madeBefore">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/meetingNote -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingNote -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/meetingNote">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingNote">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>meeting note</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/meetingPlace -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingPlace -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/meetingPlace">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingPlace">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/meetingTime -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingTime -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/meetingTime">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#meetingTime">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/notation -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notation -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/notation">
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notation">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Used as a short name for a resource.</rdfs:comment>
         <rdfs:label>notation</rdfs:label>
@@ -649,10 +650,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/with -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#with -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/wittgensteinsource/ont/with">
-        <rdfs:domain rdf:resource="http://purl.org/wittgensteinsource/ont/DiaryEntry"/>
+    <owl:DatatypeProperty rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#with">
+        <rdfs:domain rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>with</rdfs:label>
     </owl:DatatypeProperty>
@@ -670,10 +671,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Bemerkung -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Bemerkung">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Bemerkung">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Bemerkung, subclass of Wittgenstein Primary source: Corresponding roughly to a
             single remark in a Wittgenstein primary source, identified by the
             Wittgenstein Archives through a “siglum” which is composed of item identifier, page
@@ -684,10 +685,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Chapter -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Chapter -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Chapter">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Chapter">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Chapter, subclass of Wittgenstein Primary Source: A single chapter in a
             Wittgenstein primary source. Example of instance: Ts-213,chapter &quot;Verstehen&quot;
         </rdfs:comment>
@@ -696,76 +697,76 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Correspondence -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Correspondence">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Correspondence">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Letter or postcard</rdfs:comment>
         <rdfs:label>Letter or postcard</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Diary -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Diary -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Diary">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Diary">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
         <rdfs:label>Diary</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/DiaryEntry -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/DiaryEntry">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/Diary"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#DiaryEntry">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Diary"/>
         <rdfs:label>Calendar entry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/LectureNotes -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#LectureNotes -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/LectureNotes">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#LectureNotes">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
         <rdfs:label>Lecture notes</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/MS -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#MS -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/MS">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#MS">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>MS, subclass of Wittgenstein Primary Source: A Wittgenstein primary source, handwritten. Example of instance: Ms-115; Ms-139a </rdfs:comment>
         <rdfs:label>MS</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Part -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Part">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Part">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Part</rdfs:comment>
         <rdfs:label>Part</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Recollection -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Recollection -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Recollection">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Recollection">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:label>Recollection or discussion notes</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Sentence -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Sentence -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Sentence">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Sentence">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Sentence, subclass of Wittgenstein Primary Source: A single sentence in a
             Wittgenstein primary source. Example of instance: Ts-310,21[2]et22[1]_1;
             Ts-310,21[2]et22[1]_2 </rdfs:comment>
@@ -774,20 +775,20 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/TS -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#TS -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/TS">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#TS">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>TS, subclass of Wittgenstein Primary source: A Wittgenstein primary source, typed. Example of instance: Ts-213; Ts-310 </rdfs:comment>
         <rdfs:label>TS</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/Werk -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/Werk">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/WittgensteinSource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#Werk">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource"/>
         <rdfs:comment>Work, subclass of Wittgenstein Primary Source: A publication of a Wittgenstein
             primary source / of a selection from Wittgenstein primary sources which has become standard and is known as a &quot;work by Wittgenstein&quot;. Example of instance: Philosophical Investigations; Culture and Value
         </rdfs:comment>
@@ -796,10 +797,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/WittgensteinExternalSource -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinExternalSource">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinExternalSource">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
         <rdfs:comment>External primary source, subclass of Primary source: A primary source for
             Wittgenstein scholarship, not authored or co-authored by Wittgenstein, but referred to
             in a Wittgenstein primary source. Example of instance: Goethe&apos;s Faust; Augustine&apos;s 
@@ -809,10 +810,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/WittgensteinSource -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/WittgensteinSource">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#WittgensteinSource">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource"/>
         <rdfs:comment>Wittgenstein primary source, subclass of Primary source: A primary source for
             Wittgenstein scholarship, authored or co-authored by Wittgenstein.</rdfs:comment>
         <rdfs:label>WittgensteinSource</rdfs:label>
@@ -820,16 +821,16 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Chapter -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Chapter -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Chapter"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Chapter"/>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Date -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Date -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Date">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Date">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Date, subclass of Subject: A date, either day-exact or estimated date span.
             Example of instance: 19361105; 19450101-19451231 </rdfs:comment>
         <rdfs:label>Date</rdfs:label>
@@ -838,10 +839,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Field -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Field">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Field">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Field, subclass of Subject: A field of philosophical discussion. Has
             subclasses: Metaphysics; Epistemology a.o. Example of subclass structure: Field &gt;
             Epistemology &gt; Scepticism &gt; Rule-FollowingScepticism </rdfs:comment>
@@ -850,10 +851,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Issue -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Issue -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Issue">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Issue">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Issue (now called &quot;Concept&quot;), subclass of Subject: A philosophical concept. Example of instance:
             philosophy; logical analysis </rdfs:comment>
         <rdfs:label>Issue (Concept)</rdfs:label>
@@ -861,24 +862,24 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Language -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:label>Language</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/MS -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/MS -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/MS"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/MS"/>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Person -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Person">
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Person">
         <rdfs:comment>Person: A historical person. Example of instance:
       Plato; Paul Wittgenstein </rdfs:comment>
         <rdfs:label>Person</rdfs:label>
@@ -886,20 +887,20 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Perspective">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Perspective">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Perspective, subclass of Subject: A philosophical or other contextualizing perspective </rdfs:comment>
         <rdfs:label>Perspective</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Place -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Place -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Place">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Place">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Place, subclass of Subject: A place. Example of instance: Skjolden; Cambridge
         </rdfs:comment>
         <rdfs:label>Place</rdfs:label>
@@ -907,10 +908,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Point -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Point">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Point">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>Point (now called &quot;Claim&quot;), subclass of Subject: A philosophical statement. Example of instance:
             Logical analysis is essential to philosophy </rdfs:comment>
         <rdfs:label>Point (Claim)</rdfs:label>
@@ -918,10 +919,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/PrimarySource">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/PrimarySource">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:comment>Primary Source: A primary source for Wittgenstein scholarship, authored or
             co-authored by Wittgenstein, or if not by Wittgenstein, referred to by
             Wittgenstein.</rdfs:comment>
@@ -930,10 +931,10 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/SecondarySource">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/SecondarySource">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source"/>
         <rdfs:comment>Secondary source: A secondary source for Wittgenstein scholarship, not
             authored nor co-authored by Wittgenstein, but referring to Wittgenstein. Example of instance: MatarAnat_2009; WallgrenThomas_2008</rdfs:comment>
         <rdfs:label>Secondary Source</rdfs:label>
@@ -941,34 +942,34 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Source -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Source">
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Source">
         <rdfs:comment>Source: A primary or secondary source.</rdfs:comment>
         <rdfs:label>Source</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject">
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject">
         <rdfs:comment>Subject: An entity of the Wittgenstein domain that is neither a source nor a person.</rdfs:comment>
         <rdfs:label>Subject</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/TS -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TS -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/TS"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TS"/>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre -->
 
-    <owl:Class rdf:about="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+    <owl:Class rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre">
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
         <rdfs:comment>&lt;p style=&quot;margin-top: 0&quot;&gt;
       The text subgenre of a source or part of source. Example of instance: logical notation; secret code</rdfs:comment>
         <rdfs:label>Text subgenre</rdfs:label>
@@ -979,7 +980,7 @@ Bemerkung.</rdfs:comment>
     <!-- http://www.loa-cnr.it/ontologies/CommonSenseMapping#Analogy -->
 
     <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/CommonSenseMapping#Analogy">
-        <rdfs:subClassOf rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Subject"/>
+        <rdfs:subClassOf rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Subject"/>
     </owl:Class>
     
 
@@ -1011,170 +1012,170 @@ Bemerkung.</rdfs:comment>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/deu -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#deu -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/deu">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#deu">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language"/>
         <notation>de</notation>
         <rdfs:label>German</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/eng -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#eng -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/eng">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#eng">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language"/>
         <notation>en</notation>
         <rdfs:label>English</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/graphicnotation -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#graphicnotation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/graphicnotation">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#graphicnotation">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>graphics</notation>
         <rdfs:label>Graphic</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/lat -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#lat -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/lat">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#lat">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language"/>
         <notation>la</notation>
         <rdfs:label>Latin</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/logicnotation -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#logicnotation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/logicnotation">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#logicnotation">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>logic</notation>
         <rdfs:label>Logical notation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/mathsnotation -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#mathsnotation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/mathsnotation">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#mathsnotation">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>maths</notation>
         <rdfs:label>Mathematical notation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/music -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#music -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/music">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#music">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>music</notation>
         <rdfs:label>Musical notation</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/notationnotation -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notationnotation -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/notationnotation">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#notationnotation">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>notation</notation>
         <rdfs:label>Notation [not specified]</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/p -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#p -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/p">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#p">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>p</notation>
         <rdfs:label>Notation [not defined]</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/pos -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#pos -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/pos">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#pos">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>pos</notation>
         <rdfs:label>Pos</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/power -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#power -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/power">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#power">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>power</notation>
         <rdfs:label>Power</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/preface -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#preface -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/preface">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#preface">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>preface</notation>
         <rdfs:label>Preface (parts)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/root -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#root -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/root">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#root">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>root</notation>
         <rdfs:label>Root</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/rus -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#rus -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/rus">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/Language"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#rus">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/Language"/>
         <notation>ru</notation>
         <rdfs:label>Russian</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/secretcode -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#secretcode -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/secretcode">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#secretcode">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>code</notation>
         <rdfs:label>Coded text</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/set -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#set -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/set">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#set">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>set</notation>
         <rdfs:label>Set</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/wittgensteinsource/ont/tba -->
+    <!-- https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#tba -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/wittgensteinsource/ont/tba">
-        <rdf:type rdf:resource="http://purl.org/wittgensteinsource/ont/scholar/0.1/TextSubGenre"/>
+    <owl:NamedIndividual rdf:about="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#tba">
+        <rdf:type rdf:resource="https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#scholar/0.1/TextSubGenre"/>
         <notation>Tba.</notation>
         <rdfs:label>Tba.</rdfs:label>
     </owl:NamedIndividual>
@@ -1183,4 +1184,3 @@ Bemerkung.</rdfs:comment>
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
