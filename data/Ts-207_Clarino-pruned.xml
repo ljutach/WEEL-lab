@@ -7,7 +7,7 @@
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="WS" key="Facsimile: CC BY-NC 4.0. Original at the Wren Library, Trinity College, Cambridge, where in 2014-15, on the request of the Wittgenstein Archives at the University of Bergen (WAB) and with the generous financial support of the Stanhill Foundation, London, this scan was produced. The image was post-processed at WAB and is reproduced here by permission of The Master and Fellows of Trinity College, Cambridge, and the University of Bergen, Bergen. The sale, further reproduction or use of this image for commercial purposes without prior permission from the copyright holder is prohibited. © 2015 The Master and Fellows of Trinity College, Cambridge; The University of Bergen, Bergen."> Ts-207 [so-called Lecture on Ethics] (WL)</title>
+				<title type="WS" key="Facsimile: CC BY-NC 4.0. Original at the Wren Library, Trinity College, Cambridge, where in 2014-15, on the request of the Wittgenstein Archives at the University of Bergen (WAB) and with the generous financial support of the Stanhill Foundation, London, this scan was produced. The image was post-processed at WAB and is reproduced here by permission of The Master and Fellows of Trinity College, Cambridge, and the University of Bergen, Bergen. The sale, further reproduction or use of this image for commercial purposes without prior permission from the copyright holder is prohibited. © 2015 The Master and Fellows of Trinity College, Cambridge; The University of Bergen, Bergen.">Wittgenstein's Lecture on Ethics</title>
 				<title xml:id="Ts-207" n="Ts-207" type="main" xml:lang="en"/>
 				<author>
 					<persName xml:id="wittgenstein" key="Wittgenstein, Ludwig">Ludwig Wittgenstein</persName>
@@ -265,20 +265,20 @@
 						<seg type="q">“<c type="c">E</c>thics is the enquiry into<lb/>what is good”</seg> 
 						I could have said
 						<seg xml:id="ex1" type="example" ana="onto:Exemplification" corresp="#persp1">
-							<c type="c">E</c>thics is the enquiry into what is valuable
+							<c type="c">E</c>thics is the enquiry into what is valuable <lb/>
 						</seg>, or,
 						<seg xml:id="ex2" type="example" ana="onto:Exemplification" corresp="#persp1">
 							into what is really important
 						</seg>, or
 						<seg xml:id="ex3" type="example" ana="onto:Exemplification" corresp="#persp1">
-							the enquiry into the meaning of life
+							the enquiry into the meaning of life <lb/>
 						</seg>, or
 						<seg xml:id="ex4" type="example" ana="onto:Exemplification" corresp="#persp1">
 							what makes life worth living
 						</seg>, or
 						<seg xml:id="ex5" type="example" ana="onto:Exemplification" corresp="#persp1">
-							the right way of living
-						</seg>.
+							the right way of living. <lb/>
+						</seg>
 					</s>
 
 
@@ -397,7 +397,7 @@
 							ref="#wittgenstein"
 							corresp="#fld1">
 							although all judgments of relative value can be shown to be mere statements
-							of facts, no statement of fact can ever be, or imply, a judgment of
+							of facts, <lb/> no statement of fact can ever be, or imply, a judgment of
 							<emph rend="us1">absolute</emph> value
 						</seg>
 					</s>
@@ -408,13 +408,13 @@
 							ana="onto:Exemplification"
 							corresp="#clm1">
 							Let me explain this: <c type="c">S</c>uppose one of you were an omniscient
-							person and therefore knew all the movements of all the bodies in the world
-							dead or alive and that he also knew all the states of mind of all human
-							beings that ever lived, and suppose this man wrote all he knew in a big
-							book, then this book would contain the whole description of the world; and
-							what I want to say is, that this book would contain nothing that we would
-							call an <emph rend="us1">ethical</emph> judgment or anything that would logically imply such a
-							judgment.
+							person <lb/> and therefore knew all the movements of all the bodies in the world
+							dead <lb/> or alive and that he also knew all the states of mind of all human
+							beings <lb/> that ever lived, and suppose this man wrote all he knew in a big
+							book, <lb/> then this book would contain the whole description of the world; <lb/> and
+							what I want to say is, that this book <lb/> would contain nothing that we would
+							call an <emph rend="us1">ethical</emph> judgment or anything <lb/> that would logically imply such a
+							judgment. <lb/>
 						</seg>
 					</s>
 
@@ -495,7 +495,7 @@
 					</seg>
 
 					<s type="es">
-						<c type="k">I</c> can only describe my feeling by the metaphor, <seg xml:id="met1" ana="onto:Metaphor" corresp="#clm2">
+						<c type="k">I</c> can only describe <lb/> my feeling by the metaphor, <seg xml:id="met1" ana="onto:Metaphor" corresp="#clm2">
 						that, if<lb/>
 						a man could write a book on <c type="c">E</c>thics which really was a book on <c type="c">E</c>thics,
 						this<lb/>
@@ -1121,7 +1121,7 @@
 						
 						<lb/>What it says does not add to our knowledge in any sense.
 						
-						<lb/>But it<lb/>
+						<lb/>But it
 						is a document of a tendency in the human mind which I personally
 						cannot help<lb/>
 						respecting deeply and I would not for my life ridicule it.

@@ -76,17 +76,17 @@ ex:ex4 a onto:Exemplification ;
     onto:exemplifies ex:persp1 .
 
 ex:ex5 a onto:Exemplification ;
-    rdfs:comment "the right way of living" ;
+    rdfs:comment "the right way of living." ;
     onto:exemplifies ex:persp1 .
 
 ex:ex6 a onto:Exemplification ;
     rdfs:comment """Let me explain this: Suppose one of you were an omniscient
-							person and therefore knew all the movements of all the bodies in the world
-							dead or alive and that he also knew all the states of mind of all human
-							beings that ever lived, and suppose this man wrote all he knew in a big
-							book, then this book would contain the whole description of the world; and
-							what I want to say is, that this book would contain nothing that we would
-							call an ethical judgment or anything that would logically imply such a
+							person  and therefore knew all the movements of all the bodies in the world
+							dead  or alive and that he also knew all the states of mind of all human
+							beings  that ever lived, and suppose this man wrote all he knew in a big
+							book,  then this book would contain the whole description of the world;  and
+							what I want to say is, that this book  would contain nothing that we would
+							call an ethical judgment or anything  that would logically imply such a
 							judgment.""" ;
     onto:exemplifies ex:clm1 .
 
@@ -162,7 +162,7 @@ ex:src2 a onto:WittgensteinExternalSource ;
 
 ex:clm1 a onto:Point ;
     rdfs:comment """although all judgments of relative value can be shown to be mere statements
-							of facts, no statement of fact can ever be, or imply, a judgment of
+							of facts,  no statement of fact can ever be, or imply, a judgment of
 							absolute value""" ;
     onto:claimedBy ex:wittgenstein ;
     onto:isAbout ex:fld1 .

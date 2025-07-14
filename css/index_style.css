@@ -20,6 +20,50 @@ h2 {
     text-align: center;
 }
 
+
+/* === Footer === */
+.footer {
+  background-color: #000;       
+  color: #fff;                  
+  text-align: center;
+  margin-top: 40px;
+  padding: 0.1em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+}
+
+.footer a {
+  color: #1E90FF;               
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  display: none; 
+}
+
+#topBtn:hover {
+  background-color: #005fa3;
+}
+
+
 /* === Metadata Header === */
 .tei-header {
     background: #f8be98;
@@ -40,16 +84,16 @@ h2 {
     border-collapse: collapse;
     margin-top: 1em;
     font-size: 0.95em;
-    border: 1px solid #41a36d; /* add border to the whole table */
+    border: 1px solid #41a36d; 
 }
 
 .metadata-table th, .metadata-table td {
-    border: 1px solid #3e11c5;  /* add border to cells */
+    border: 1px solid #3e11c5; 
     padding: 0.5em;
 }
 
 .metadata-table th {
-    text-align: center; /* your desired alignment */
+    text-align: center; 
     background: #a7eeb1;
     color: #333;
     vertical-align: top;

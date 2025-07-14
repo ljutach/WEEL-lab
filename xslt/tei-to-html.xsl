@@ -13,18 +13,49 @@
             <head>
                 <meta charset="UTF-8"/>
                 <title><xsl:value-of select="//tei:title[@type='WS']"/></title>
-                <link rel="stylesheet" href="css/style.css"/>
+                <link rel="stylesheet" href="css/index_style.css"/>
             </head>
             <body>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="documentation.html">Documentation</a></li>
-                        <li><a href="http://example.org:8890/sparql" target="_blank">SPARQL Endpoint</a></li>
+                        <a href="table_graph.html" target="_blank">RDF Table Viewer</a>
                     </ul>
                 </nav>
                 <h1><xsl:value-of select="//tei:title[@type='WS']"/></h1>
                 <xsl:apply-templates select="//tei:teiHeader"/>
                 <xsl:apply-templates select="//tei:body"/>
+                
+                <!-- Back to Top Button -->
+                <button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
+
+
+                <!-- 🧩 Footer -->
+                <footer class="footer">
+                    <p>
+                        Source available on 
+                        <a href="https://github.com/ljutach/WEEL-lab" target="_blank">GitHub</a>
+                    </p>
+                    <p>
+                        <p>© Luca Scotti</p>
+                    </p>
+                </footer>
+                
+                <script>
+                    <![CDATA[
+                        window.onscroll = function() {
+                        const btn = document.getElementById("topBtn");
+                        btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100)
+                            ? "block" : "none";
+                        };
+
+                        function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                        }
+                    ]]>
+                </script>
+                
+                
             </body>
         </html>
     </xsl:template>
@@ -38,7 +69,14 @@
                 <tr><th>Author</th><td><xsl:value-of select=".//tei:author/tei:persName"/></td></tr>
                 <tr><th>Editor(s)</th><td><xsl:apply-templates select=".//tei:editor"/></td></tr>
                 <tr><th>Funder(s)</th><td><xsl:value-of select=".//tei:funder"/></td></tr>
-                <tr><th>Publisher</th><td><xsl:value-of select=".//tei:publicationStmt/tei:publisher"/></td></tr>
+                <tr>
+                    <th>Publisher</th>
+                    <td>
+                        <a href="https://wab.uib.no" target="_blank">
+                            <xsl:value-of select=".//tei:publicationStmt/tei:publisher"/>
+                        </a>
+                    </td>
+                </tr>
                 <tr><th>Location</th><td><xsl:value-of select=".//tei:pubPlace"/></td></tr>
                 <tr><th>Source</th><td><xsl:value-of select=".//tei:sourceDesc/tei:p"/></td></tr>
                 <tr><th>License</th><td><xsl:value-of select=".//tei:availability/tei:p"/></td></tr>
@@ -66,9 +104,6 @@
         </p>
     </xsl:template>
     
-    <!-- <xsl:template match="tei:s">
-        <div class="sentence"><xsl:apply-templates/></div>
-    </xsl:template> -->
     
     <!-- Line Breaks -->
     

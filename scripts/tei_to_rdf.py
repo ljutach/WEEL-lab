@@ -160,3 +160,68 @@ for persp in root.findall(".//tei:*[@ana='onto:Perspective']", NS):
 # Serialize RDF
 g.serialize("rdf/wittgenstein_output.ttl", format="turtle")
 print("RDF created as wittgenstein_output.ttl")
+
+
+# === JSON export with flattened literals ===
+import json
+
+nodes = {}
+edges = {}
+
+# 1. Map rdfs:label or rdfs:comment to URIs
+label_map = {}
+for s, p, o in g:
+    if p in (RDFS.label, RDFS.comment) and isinstance(o, Literal):
+        label_map[str(s)] = str(o)
+
+# 2. Construct nodes and edges with flattened labels
+for s, p, o in g:
+    subj_uri = str(s)
+    pred = str(p)
+
+    # Subject label (if available), else ID
+    subj_label = label_map.get(subj_uri, subj_uri.split("/")[-1])
+    if subj_label not in nodes:
+        nodes[subj_label] = {
+            "id": subj_label,
+            "label": subj_label
+        }
+
+    # Object
+    if isinstance(o, Literal):
+        obj_label = str(o)
+        if obj_label not in nodes:
+            nodes[obj_label] = {
+                "id": obj_label,
+                "label": obj_label,
+                "type": "literal"
+            }
+        target = obj_label
+
+    else:
+        obj_uri = str(o)
+        obj_label = label_map.get(obj_uri, obj_uri.split("/")[-1])
+        if obj_label not in nodes:
+            nodes[obj_label] = {
+                "id": obj_label,
+                "label": obj_label
+            }
+        target = obj_label
+
+    # Add the edge
+    edges.setdefault((subj_label, pred.split("#")[-1], target), {
+        "source": subj_label,
+        "label": pred.split("#")[-1],
+        "target": target
+    })
+
+# 3. Serialize to JSON
+output = {
+    "nodes": list(nodes.values()),
+    "edges": list(edges.values())
+}
+
+with open("json/graph_data.json", "w", encoding="utf-8") as f:
+    json.dump(output, f, indent=2, ensure_ascii=False)
+
+print("Graph JSON created with flattened literals as rdf/graph_data1.json")
