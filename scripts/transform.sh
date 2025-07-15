@@ -17,7 +17,7 @@ if [ $? -eq 0 ]; then
   python3 scripts/tei_to_rdf.py
 
   if [ $? -eq 0 ]; then
-    echo "-- RDF generation complete. Saved as wittgenstein_output.ttl"
+    echo "-- RDF-TTL and JSON graph generation complete. Saved as rdf/wittgenstein_output.ttl and json/graph_data.json respectively"
   else
     echo "-- RDF generation failed."
   fi

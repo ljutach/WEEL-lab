@@ -41,6 +41,7 @@ h2 {
   text-decoration: underline;
 }
 
+/* === Back-to-Top Button === */
 #topBtn {
   position: fixed;
   bottom: 30px;
@@ -217,7 +218,7 @@ h2 {
 }
 
 
-/* === Links and Misc === */
+/* === Links === */
 a {
     color: #0066cc;
     text-decoration: none;

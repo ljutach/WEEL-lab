@@ -41,7 +41,7 @@
         const short = value.split(/[#/]/).pop();
         return `<a href="${value}" title="${value}" target="_blank">${short}</a>`;
       }
-      return value; // Return full literal as-is
+      return value; 
     }
 
     fetch('json/graph_data.json')

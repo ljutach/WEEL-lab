@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, RDFS, XSD
+import json
 
 # Load TEI
 tei_file = "data/Ts-207_Clarino-pruned.xml"  # replace with your actual TEI file
@@ -13,7 +14,7 @@ NS = {
     "xml": "http://www.w3.org/XML/1998/namespace"
 }
 
-# Ontology Namespace (from your OWL file)
+# Ontology Namespace 
 ONTO = Namespace("https://ljutach.github.io/WEEL-lab/rdf/wittgenstein_ontology.owl#")
 EX = Namespace("https://ljutach.github.io/WEEL-lab/resource/")  # for local URIs
 
@@ -22,7 +23,7 @@ g = Graph()
 g.bind("onto", ONTO)
 g.bind("ex", EX)
 
-# Helper: get attribute with namespace
+# get attribute with namespace
 def get_attr(el, attr):
     return el.attrib.get(f"{{{NS['xml']}}}{attr}")
 
@@ -47,7 +48,7 @@ for field in root.findall(".//tei:term", NS):
         continue  # skip terms without xml:id
 
     field_uri = EX[field_id]
-    g.add((field_uri, RDF.type, ONTO.Field))  # class Field from ontology
+    g.add((field_uri, RDF.type, ONTO.Field))  
 
     # Add literal label or description
     content = "".join(field.itertext()).strip()
@@ -62,9 +63,9 @@ for source in root.findall(".//tei:bibl[@ana='onto:WittgensteinExternalSource']"
         continue  # skip sources without xml:id
 
     source_uri = EX[source_id]
-    g.add((source_uri, RDF.type, ONTO.WittgensteinExternalSource))  # the correct class
+    g.add((source_uri, RDF.type, ONTO.WittgensteinExternalSource))  
 
-    # Link to author if @ref is present (e.g., ref="#shakespeare")
+    # Link to author if @ref is present 
     ref = source.attrib.get("ref")
     if ref:
         g.add((source_uri, ONTO.hasAuthor, EX[ref.strip("#")]))
@@ -87,7 +88,7 @@ for ex in root.findall(".//tei:seg[@ana='onto:Exemplification']", NS):
         for c in corresp.strip().split():
             g.add((ex_uri, ONTO.exemplifies, EX[c.strip("#")]))
 
-    # Literal content of the example
+    # Literal content of the examplification
     content = "".join(ex.itertext()).strip()
     if content:
         g.add((ex_uri, RDFS.comment, Literal(content)))
@@ -118,12 +119,12 @@ for point in root.findall(".//tei:*[@ana='onto:Point']", NS):
     point_uri = EX[point_id]
     g.add((point_uri, RDF.type, ONTO.Point))
 
-    # claimedBy (e.g. ref="#wittgenstein")
+    # claimedBy
     ref = point.attrib.get("ref")
     if ref:
         g.add((point_uri, ONTO.claimedBy, EX[ref.strip("#")]))
 
-    # isAbout (e.g. corresp="#fld1")
+    # isAbout 
     corresp = point.attrib.get("corresp")
     if corresp:
         for c in corresp.strip().split():
@@ -139,12 +140,12 @@ for persp in root.findall(".//tei:*[@ana='onto:Perspective']", NS):
     persp_uri = EX[persp_id]
     g.add((persp_uri, RDF.type, ONTO.Perspective))
 
-    # claimedBy (e.g., ref="#wittgenstein")
+    # claimedBy 
     ref = persp.attrib.get("ref")
     if ref:
         g.add((persp_uri, ONTO.claimedBy, EX[ref.strip("#")]))
 
-    # isAbout (e.g., corresp="#fld1")
+    # isAbout 
     corresp = persp.attrib.get("corresp")
     if corresp:
         for c in corresp.strip().split():
@@ -159,11 +160,10 @@ for persp in root.findall(".//tei:*[@ana='onto:Perspective']", NS):
 
 # Serialize RDF
 g.serialize("rdf/wittgenstein_output.ttl", format="turtle")
-print("RDF created as wittgenstein_output.ttl")
 
 
 # === JSON export with flattened literals ===
-import json
+
 
 nodes = {}
 edges = {}
@@ -224,4 +224,3 @@ output = {
 with open("json/graph_data.json", "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print("Graph JSON created with flattened literals as rdf/graph_data1.json")

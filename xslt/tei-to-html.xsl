@@ -29,7 +29,7 @@
                 <button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
 
 
-                <!-- 🧩 Footer -->
+                <!-- Footer -->
                 <footer class="footer">
                     <p>
                         Source available on 
@@ -40,6 +40,7 @@
                     </p>
                 </footer>
                 
+                <!-- Embedded JS -->
                 <script>
                     <![CDATA[
                         window.onscroll = function() {
@@ -146,23 +147,19 @@
         </div>
     </xsl:template>
     
+    <!-- Point as <seg> -->
     <xsl:template match="tei:seg[@ana='onto:Point']">
         <span class="point" title="class:Point(Claim)">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
-    
     <!-- Point as <s> -->
     <xsl:template match="tei:s[@ana='onto:Point']">
         <div class="point-sentence" title="class:Point(Claim)">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-
-
-
-    
     
     <!-- Perspective -->
     <xsl:template match="tei:s[@ana='onto:Perspective'] | tei:seg[@ana='onto:Perspective']">
